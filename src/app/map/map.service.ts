@@ -5,10 +5,9 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class MapService{
 
-  public currentLocation : any;
+  public currentLocation : [number,number];
 
   constructor(private http: Http) {
-    this.currentLocation = "";
   }
 
   getLocation() {
