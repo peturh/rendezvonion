@@ -9,7 +9,8 @@
     "start": "npm run server"
   },
   "contributors": [
-    "pétur"
+    "pétur",
+    "lars"
   ],
   "license": "MIT",
   "dependencies": {
