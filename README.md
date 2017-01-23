@@ -1,7 +1,6 @@
-## angular2-seed
+## rendezvonion
 
-A simple starter project demonstrating the basic concepts of Angular 2.
-
+A project for meeting people anonomously
 
 ### Usage
 - Clone or fork this repository
