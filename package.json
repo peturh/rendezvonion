@@ -1,7 +1,7 @@
 {
-  "name": "angular2-seed",
+  "name": "rendezvonion",
   "version": "1.0.0",
-  "description": "A simple starter Angular2 project",
+  "description": "",
   "scripts": {
     "build": "webpack --progress",
     "watch": "npm run build -- --watch",
@@ -9,8 +9,7 @@
     "start": "npm run server"
   },
   "contributors": [
-    "Rob Wormald <robwormald@gmail.com>",
-    "PatrickJS <github@gdi2290.com>"
+    "pétur"
   ],
   "license": "MIT",
   "dependencies": {
