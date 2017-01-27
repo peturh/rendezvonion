@@ -23,7 +23,6 @@ export class MapComponent implements OnInit {
   askPermissionForLocation(callback): void {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
-        console.log(position)
         this.mapService.setLocation(position.coords);
         callback();
       })
@@ -43,8 +42,8 @@ export class MapComponent implements OnInit {
         layers: [layer],
         target: 'map',
         view: new ol.View({
-          center: [0,0],
-          zoom: 2
+          center:  ol.proj.fromLonLat(this.mapService.getLocation()),
+          zoom: 10
         })
       });
 
@@ -60,11 +59,11 @@ export class MapComponent implements OnInit {
       map.addOverlay(marker);
 
       // Vienna label
-      var vienna = new ol.Overlay({
+      var you = new ol.Overlay({
         position: pos,
-        element: document.getElementById('vienna')
+        element: document.getElementById('you')
       });
-      map.addOverlay(vienna);
+      map.addOverlay(you);
 
       // Popup showing the position the user clicked
       var popup = new ol.Overlay({
